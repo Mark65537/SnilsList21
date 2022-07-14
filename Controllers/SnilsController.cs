@@ -28,13 +28,11 @@ namespace SnilsList21.Controllers
             if (ModelState.IsValid)
             {
                 string Number = model.Number.Trim();
-                if (!int.TryParse(Number, out int num) || Number.Length != 11)
+                if (Number.Length != 11 || !long.TryParse(Number, out long num))
                 {
                     TempData["Message"] = "СНИЛС введен не корректно!";
                     return View(model);
-                }
-                    
-
+                }                 
 
                 var newSnils = new Snils
                 {
