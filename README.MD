@@ -1,3 +1,7 @@
+Главная страница
+![image](https://github.com/Mark65537/SnilsList21/blob/master/screenshots/image1.gif)
+Страница создания
+![image](https://github.com/Mark65537/SnilsList21/blob/master/screenshots/image2.gif)
 # Описание
 Реализовано веб-приложение со следующим функционалом:
 1. Ввод и отправка СНИЛС со страницы на сервер;
