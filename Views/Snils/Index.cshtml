@@ -1,0 +1,13 @@
+﻿
+
+@{
+    ViewData["Title"] = "Главная";
+}
+
+        <div>
+            <a class="abutton" asp-controller="Snils" asp-action="Create">Создать новую задачу</a>
+            @foreach (var item in Model)
+            {
+                <text>@item.Number</text>
+            }
+        </div>
