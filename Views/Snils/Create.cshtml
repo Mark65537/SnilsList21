@@ -1,14 +1,14 @@
 ﻿@model SnilsList21.Models.SnilsCreateViewModel
 
 @{
-    ViewData["Title"] = "Создать задачу";
+    ViewData["Title"] = "Добавить СНИЛС";
 }
 
 <div>
     <form asp-antiforgery="true" asp-action="Create" method="post">
         <div asp-validation-summary="ModelOnly"></div>
         <div>
-            <label>Number</label>
+            <label>СНИЛС</label>
             <input asp-for="Number" />
         </div>        
         <div>
