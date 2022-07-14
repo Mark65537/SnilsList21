@@ -1,4 +1,4 @@
-﻿
+﻿@model  IEnumerable<SnilsList21.Models.Snils>
 
 @{
     ViewData["Title"] = "Главная";
@@ -8,6 +8,6 @@
             <a class="abutton" asp-controller="Snils" asp-action="Create">Создать новую задачу</a>
             @foreach (var item in Model)
             {
-                <text>@item.Number</text>
+                <p>@item.Number</p>
             }
         </div>
