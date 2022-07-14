@@ -5,9 +5,12 @@
 }
 
         <div>
-            <a class="abutton" asp-controller="Snils" asp-action="Create">Создать новую задачу</a>
-            @foreach (var item in Model)
-            {
-                <p>@item.Number</p>
-            }
+            <a class="abutton" asp-controller="Snils" asp-action="Create">Добавить СНИЛС</a>
+            <h1>Список СНИЛС:</h1>
+            <ul>
+                @foreach (var item in Model)
+                {
+                    <li>@item.Number</li>
+                }
+            </ul>
         </div>
