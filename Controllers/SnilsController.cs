@@ -6,7 +6,7 @@ namespace SnilsList21.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return null;
         }
     }
 }
